@@ -1,0 +1,28 @@
+.Center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+
+header {
+    background-color: blue;
+    height: 118px;
+}
+
+nav {
+background-color: lightblue;
+height: 40px;
+}
+
+main {
+background-color: gray;
+height: 600px; 
+}
+
+footer {
+ background-color: lightblue;
+height: 140px;
+}
+
+
