@@ -1,7 +1,10 @@
+
+/* color, padding, and style */
+
 html {
     height: 100%;
 }
-
+/*background image and color*/
 body {
     background-color: rgba(58, 58, 58, 0.774);
     background-image: url(img/photo-1478760329108-5c3ed9d495a0.jpg);
@@ -21,7 +24,7 @@ header {
     height: 118px;
     text-align: center;
 }
-
+/*Task Bar*/
 nav {
 background-color: rgba(180, 66, 66, 0.384);
 height: 40px;
@@ -61,7 +64,7 @@ p {
 a {
     color: white;
     font-family:  Arial, Helvetica, sans-serif;
-    /* text-decoration: yellow; */
+/* text-decoration: white; commented out*/
 }
 
 nav a {
@@ -93,4 +96,11 @@ article {
     border: 2px solid black;
     margin: 20px;
     padding: 20px;
+}
+
+#myheader {
+    background-color: chartreuse;
+    color: black;
+    padding: 40px;
+    text-align: center;
 }

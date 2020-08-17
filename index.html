@@ -3,103 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Test1',     11],
-          ['Test2',      8],
-          ['Test3',  9],
-          ['Test4', 5],
-          ['Test5',    7]
-        ]);
-
-        var options = {
-          title: 'Test pie chart'
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
-      }
-    </script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['table']});
-      google.charts.setOnLoadCallback(drawTable);
-
-      function drawTable() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'FirstName');
-        data.addColumn('number', 'LastName');
-        data.addColumn('boolean', 'Employed');
-        data.addRows([
-          ['Mike',  {v: 10000, f: 'Smith'}, true],
-          ['Jim',   {v:8000,   f: 'Baker'},  false],
-          ['Alice', {v: 12500, f: 'Cobbler'}, false],
-          ['John',   {v: 7000,  f: 'Pine'},  true]
-        ]);
-
-        var table = new google.visualization.Table(document.getElementById('table_div'));
-
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
-      }
-    </script>
-
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
-
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ['Y', 'Position'],
-      [ 8,      12],
-      [ 4,      5.5],
-      [ 11,     14],
-      [ 4,      5],
-      [ 3,      3.5],
-      [ 6.5,    7]
-    ]);
-
-    var options = {
-      title: 'Plot chart',
-      hAxis: {title: 'X', minValue: 0, maxValue: 15},
-      vAxis: {title: 'Y', minValue: 0, maxValue: 15},
-      legend: 'none'
-    };
-
-    var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
-
-    chart.draw(data, options);
-  }
-</script>
-
-
-
+    <title>Project Website</title>
+    <link rel="stylesheet" href="mainstyle.css">
 </head>
 <body>
-    <div id="piechart" class="chart"></div>
-
-    <div id="table_div" class="table"></div>
-
-    <div id="chart_div" style="width: 900px; height: 500px;" class="scatter"></div>
     
+
+    <div class="Center">
+        <header>
+            <img src="img/html-color-codes-color-tutorials-hero-00e10b1f.jpg" alt="Logo">
+        </header>
+<!--Task Bar-->
+        <nav>
+            <a href="http://www.google.com" target="_blank">Home</a>
+            <a href="http://www.google.com" target="_blank">Menu</a>
+            <a href="mailto:MyJayJay05@gmail.com" target="_blank">Contact</a>
+            <a href="http://www.google.com" target="_blank">Return</a>
+        </nav>
+    
+        <main>
+            <h1 style="border:2px solid blue;">Let's Test</h1>
+            <p>This is a long chunk of words used to show the paragraph and <i>to <span style="color: red; "><b>continue</b></span> the chain</i> until i have enough characters
+            </p>
+
+            <a href="http://www.google.com" target="_blank">Test Link</a>
+            
+        </main>
+<!--Google Maps-->
+        <section class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3338.7894293226213!2d-117.38814298443239!3d33.19339456994434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc6e480868b181%3A0x48d09b2e0496ef86!2sOceanside%20Fishing%20Pier!5e0!3m2!1sen!2sus!4v1596784155639!5m2!1sen!2sus" width="1024" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            <iframe width="1024" height="315" src="https://www.youtube.com/embed/IuBQkdsajVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </section>
+
+        <main2>
+<!--HTML list unordered-->
+            <h2 style="color: blue;">Unordered HTML List</h2>
+
+            <ul>
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Milk</li>
+            </ul>  
+        </main2>
+
+        <article>
+        <p>testing <span style="border: 1px solid black;">Span</span> in articles</p>        
+        </article>
+
+
+<!--bordered area-->
+        <div class="city">
+            <h2 id="myheader">Testing ID inside a borded area</h2>
+            <p>Test Desc</p>
+        </div>
+
+        <div class="city">
+            <h2>Test name</h2>
+            <p>Test Desc</p>
+        </div>
+
+        <div class="city">
+            <h2>Test name</h2>
+            <p>Test Desc</p>
+        </div>
+        
+
+
+
+    
+        <footer>
+<!--HTML TABLE-->
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                    padding: 10px;
+                }
+                th{
+                    text-align: left;
+                }
+                table {
+                    border-spacing: 10px;
+                }
+            </style>
+            <h2>Basic HTML table</h2>
+            <table style="width: 100%;">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jack</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Baker</td>
+                <td>55</td>
+            </tr>
+            <tr>
+                <td>george</td>
+                <td>jackson</td>
+                <td>33</td>
+            </tr>
+            
+            
+            </table>
+
+
+
+
+
+
+
+
+        </footer>
+    
+    </div>
+
 </body>
-
-<footer>
-</footer>
-
-
-
-
 </html>
